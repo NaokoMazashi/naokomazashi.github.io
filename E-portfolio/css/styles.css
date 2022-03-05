@@ -106,10 +106,6 @@ li {
   color: #fff;
 }
 
-#main {
-  margin-left: 300px;
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -203,4 +199,78 @@ li {
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #a8a9b4;
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+  margin-left: 300px;
+  padding: 0 30px;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio-links {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-bottom: 35px;
+  background: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px #e3e3e3;
+  width: 244px;
+}
+
+.portfolio-links img {
+  border-radius: 20px 20px 0 0;
+  height: 120px;
+  width: 244px;
+  padding: 4px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.portfolio-title {
+  padding: 10px;
+  color: #2c2f3f;
+  font-size: 13px;
+}
+
+.portfolio-title p {
+  font-size: 12px;
 }
