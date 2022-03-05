@@ -127,8 +127,7 @@ li {
   white-space: nowrap;
 }
 
-.nav-menu a,
-.nav-menu a:focus {
+.nav-menu a {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -138,30 +137,25 @@ li {
   font-size: 15px;
 }
 
-.nav-menu a i,
-.nav-menu a:focus i {
+.nav-menu a i {
   font-size: 18px;
   padding-right: 8px;
   color: #6f7180;
 }
 
 .nav-menu a:hover,
-.nav-menu .active,
-.nav-menu .active:focus,
 .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
 
 .nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
 .nav-menu li:hover > a i {
   color: #149ddd;
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Entitled Section
 --------------------------------------------------------------*/
 #entitled {
   width: 100%;
@@ -206,7 +200,6 @@ li {
 --------------------------------------------------------------*/
 #main {
   margin-left: 300px;
-  padding: 0 30px;
 }
 
 section {
@@ -243,8 +236,45 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
+#education {
+  background: #f5f8fd;
+  padding: 60px;
+}
+
+.education-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card {
+  margin-bottom: 20px;
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.education-card::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio {
+  padding: 60px;
+}
+
 .portfolio-links {
   display: flex;
   flex-direction: column;
@@ -277,6 +307,7 @@ section {
 }
 
 .portfolio-title p {
+  padding: 5px 0;
   font-size: 12px;
   color: #1a4264;
 }
