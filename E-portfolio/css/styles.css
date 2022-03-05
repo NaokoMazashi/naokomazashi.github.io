@@ -250,10 +250,15 @@ section {
   flex-direction: column;
   margin-right: 15px;
   margin-bottom: 35px;
-  background: #f8f8f8;
+  background: #f5f8fd;
   border-radius: 20px;
   box-shadow: 5px 5px 5px 1px #e3e3e3;
   width: 244px;
+}
+
+.portfolio-links:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
 }
 
 .portfolio-links img {
@@ -273,4 +278,5 @@ section {
 
 .portfolio-title p {
   font-size: 12px;
+  color: #1a4264;
 }
